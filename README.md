@@ -49,12 +49,12 @@ The directory structure of the project looks like this:
 └── tasks.py                  # Project tasks
 ```
 
-- data.py: this file is responsible for everything related to the data. This includes loading, cleaning, and splitting the data. If the data needs to be pre-- processed then running this file should process raw data in the data/raw folder and save the processed data in the data/processed folder.
-- model.py: this file contains one or model definitions.
-- train.py: this file is responsible for training the model. It should import the training/validation data interface from data.py and the model definition from model.py.
-- evaluate.py: this file is responsible for evaluating the model. It should import the test data interface from data.py and load the trained model from the models folder. Output should be performance metrics of the trained model.
-- api.py: this file is responsible for serving the model. It should import the trained model from the models folder and provide an interface for making predictions.
-- visualize.py: this file is responsible for visualizing the data and model. It should import the training/validation/ test data interface from data.py and the trained model from the models folder. Output should be visualizations of the data and model.
+- *data.py*: this file is responsible for everything related to the data. This includes loading, cleaning, and splitting the data. If the data needs to be pre-- processed then running this file should process raw data in the data/raw folder and save the processed data in the data/processed folder.
+- *model.py*: this file contains one or model definitions.
+- *train.py*: this file is responsible for training the model. It should import the training/validation data interface from data.py and the model definition from model.py.
+- *evaluate.py*: this file is responsible for evaluating the model. It should import the test data interface from data.py and load the trained model from the models folder. Output should be performance metrics of the trained model.
+- *api.py*: this file is responsible for serving the model. It should import the trained model from the models folder and provide an interface for making predictions.
+- *visualize.py*: this file is responsible for visualizing the data and model. It should import the training/validation/ test data interface from data.py and the trained model from the models folder. Output should be visualizations of the data and model.
 
 Created using [mlops_template](https://github.com/SkafteNicki/mlops_template),
 a [cookiecutter template](https://github.com/cookiecutter/cookiecutter) for getting
